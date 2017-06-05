@@ -5,9 +5,9 @@
 <mapper namespace="com.qu.DAO.UserImp">
 
     <!-- select-->
-    <select id="selectUserByID" parameterType="int" resultType="User">
-        select * from user where id=#{id}
-    </select>
+    <!--<select id="selectUserByID" parameterType="int" resultType="User">-->
+        <!--select * from user where id=#{id}-->
+    <!--</select>-->
 
 
     <resultMap id="userResultMap" type="User">

@@ -26,29 +26,7 @@ public class UserDAO {
             e.printStackTrace();
         }
     }
-    public static SqlSessionFactory getSession(){
-        return sqlSessionFactory;
-    }
 
-//    static {
-//        try {
-//            InputStream inputStream = Resources.getResourceAsStream("com/qu/mybatis_config.xml");
-//            sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-    static{
-        try{
-            InputStream inputStream=Resources.getResourceAsStream("mybat is_config.xml");
-            sqlSessionFactory=new SqlSessionFactoryBuilder().build(inputStream);
-    }catch(Exception e){
-            e.printStackTrace();
-        }
-
-
-    }
     public static void main(String[] args) {
         UserDAO userDAO=new UserDAO();
         userDAO.getUserByID(1);
